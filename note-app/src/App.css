@@ -1,0 +1,111 @@
+/* Make app take full screen */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom right, #f0f4ff, #ffeaf4);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* Center and style container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  resize: vertical;
+  font-size: 1rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+textarea:focus {
+  border-color: #7b5cff;
+  box-shadow: 0 0 8px rgba(123, 92, 255, 0.4);
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background: #7b5cff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #6849d9;
+}
+
+.clear-btn {
+  background: #ccc;
+  color: #333;
+}
+
+.clear-btn:hover {
+  background: #aaa;
+}
+
+/* Notes list */
+.notes-container {
+  width: 100%;
+}
+
+.note-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.note-card p {
+  margin: 0 0 0.5rem 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-actions button {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+}
+
+.delete-btn {
+  background: #ff4d4d;
+}
+
+.delete-btn:hover {
+  background: #cc0000;
+}
+
+.empty-text {
+  color: #777;
+  font-style: italic;
+}
